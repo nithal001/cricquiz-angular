@@ -1,0 +1,93 @@
+// This file contains temporary configuration for the styles
+
+// --------------------------------------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------------------------------------
+
+// Font families
+$system-font: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$default-font: $system-font !default; // TODO: Not set yet
+$heading-font: $default-font; // TODO: Not set yet
+
+// Font sizes
+$body-font-size: 15px !default;
+$heading-font-size: (
+	h1: 28px,
+	h2: 26px,
+	h3: 22px,
+	h4: 18px,
+	h5: 14px,
+	h6: 12px,
+) !default;
+
+// Line height
+$default-line-height: 1.3 !default;
+$content-line-height: 1.7 !default;
+$input-line-height: 1.3 !default;
+
+
+// --------------------------------------------------------------------------------------------
+// Colors
+// --------------------------------------------------------------------------------------------
+
+// Site colors
+$primary-color: (
+	main: #66a1ff,
+	light: #80b0ff,
+	lighter: #b2d0ff,
+	lightest: #e5efff
+) !default;
+
+// Text colors
+$content-color: #666 !default;
+$content-color-light: #999 !default;
+$link-color: #999 !default;
+$link-color-light: #ccc !default;
+$heading-color: #333 !default;
+$heading-color-light: #666 !default;
+$placeholder-color: #999 !default;
+
+// Background colors
+$site-bgc: #eee !default;
+$content-bgc: #fff !default;
+
+// Border colors
+$content-bdc: #eee !default;;
+
+// Other colors
+$white: #fff !default;
+
+
+// --------------------------------------------------------------------------------------------
+// Layout
+// --------------------------------------------------------------------------------------------
+
+// Max site width
+$max-site-width: 1366px !default;
+
+// Breakpoints
+$breakpoint-small: 415px !default;
+$breakpoint-medium: 768px !default;
+$breakpoint-large: 1024px !default;
+$breakpoint-xlarge: 1366px !default;
+
+// Spacing
+$space: 20px !default;
+$space-xsmall: 5px !default;
+$space-small: 10px !default;
+$space-smaller: 15px !default;
+$space-medium: 20px !default;
+$space-larger: 30px !default;
+$space-large: 40px !default;
+$space-xlarge: 60px !default;
+$space-xxlarge: 100px !default;
+
+// Borders
+$site-border-width: 1px!default;
+$input-border-width: 2px !default;
+
+// Radius
+$radius: 3px !default;
+
+// Animation
+$transition-speed: .4s !default;

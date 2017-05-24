@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------------------------
+// Overall Layout for the App Frame
+// --------------------------------------------------------------------------------------------
+
+body {
+	padding: $space;
+    background: blue;
+    color: $white;
+}
+
+.container {
+	@include clearfix;
+	max-width: $max-site-width;
+	margin: 0 auto $space-smaller;
+	&:last-of-type { margin-bottom: 0; }
+	&.fluid { max-width: 100%; }
+}
+
+.content {
+	@include clearfix;
+	background: $content-bgc;
+	padding: $space;
+	&.demo {
+		min-height: calc(100vh - #{$space * 2});
+	}
+}
