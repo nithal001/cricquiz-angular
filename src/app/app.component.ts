@@ -7,4 +7,8 @@ import '../assets/style/styles.scss';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent { }
+export class AppComponent {
+    showLogin() {
+        console.log('login clicked');
+    }
+}
