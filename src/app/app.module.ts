@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 import { routing } from './app.routing';
 
@@ -19,9 +20,10 @@ import { routing } from './app.routing';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
-  entryComponents: [LoginComponent],
+  entryComponents: [LoginComponent, RegisterComponent],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
