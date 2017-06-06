@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './login/login.component';
 
 import '../assets/style/styles.scss';
 
@@ -8,7 +10,9 @@ import '../assets/style/styles.scss';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    showLogin() {
-        console.log('login clicked');
+    constructor(private modalService: NgbModal) {}
+
+    openLoginModal() {
+        const modalRef = this.modalService.open(LoginComponent);
     }
 }
