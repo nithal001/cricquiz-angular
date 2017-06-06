@@ -21,6 +21,7 @@ import { routing } from './app.routing';
     AboutComponent,
     LoginComponent
   ],
+  entryComponents: [LoginComponent],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
