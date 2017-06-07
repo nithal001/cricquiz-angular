@@ -1,8 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-
 import '../assets/style/styles.scss';
 
 @Component({
@@ -11,13 +7,6 @@ import '../assets/style/styles.scss';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    constructor(private modalService: NgbModal) {}
+    constructor() {}
 
-    openLoginModal() {
-        const modalRef = this.modalService.open(LoginComponent);
-    }
-
-    openRegisterModal() {
-        const modalRef = this.modalService.open(RegisterComponent);
-    }
 }

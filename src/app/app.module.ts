@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { GlobalNavigationComponent } from './global-navigation/global-navigation.component';
 
 import { routing } from './app.routing';
 
@@ -21,7 +22,8 @@ import { routing } from './app.routing';
     HomeComponent,
     AboutComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    GlobalNavigationComponent
   ],
   entryComponents: [LoginComponent, RegisterComponent],
   bootstrap: [ AppComponent ]
