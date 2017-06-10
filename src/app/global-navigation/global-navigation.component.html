@@ -1,6 +1,28 @@
-<nav>
-  <a [routerLink]="['']">Home</a>
-  <a [routerLink]="['about']">About</a>
-  <a href="javascript:void(0)" (click)="openLoginModal()">Login</a>
-  <a href="javascript:void(0)" (click)="openRegisterModal()">Register</a>
-</nav>
+
+ <div class="container">
+    <nav class="navbar navbar-default" role="navigation"> 
+      <!-- Brand and toggle get grouped for better mobile display --> 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="menuBar">
+      	<nav>
+        <ul class="menu">
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['']" >Home</a></li>
+          <li class="dropdown"><a href="#">Pages</a>
+            <ul>
+              <li><a href="#">Home / Fixed</a></li>
+            </ul>
+          </li>
+          <li [routerLinkActive]="['active']"><a [routerLink]="['about']" >About</a></li>
+        </ul>
+        </nav>
+        <ul class="menu m_right">
+          <li><a href="#" (click)="openLoginModal()">Login</a></li>
+          <li><a href="#" (click)="openRegisterModal()">Register</a></li>
+        </ul>
+      </div>
+      <div class="navbar-header">
+        <h1 class="navbar-brand"><a href="/">Cricquiz</a></h1>
+        <a href="#" onClick="javascript.void()" class="submenu">Menus</a> </div>
+      <!-- /.navbar-collapse --> 
+    </nav>
+  </div>
